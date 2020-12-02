@@ -13,6 +13,22 @@
 #define SYMB 1 // symbols
 #define MOVE 2 // numbers/motion
 
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+      case MT(MOD_LSFT, KC_F23):
+        if (record->tap.count > 0) {
+          if (record->event.pressed) {
+            register_code16(KC_PERC);
+          } else {
+            unregister_code16(KC_PERC);
+          }
+          return false;
+        }
+        break;
+  }
+  return true;
+};
+
 /* Combomap
  *
  * ,---------------------------------------.  ,---------------------------------------.
@@ -65,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [SYMB] = LAYOUT_gergoplex(
     KC_EXLM,               KC_AT,   KC_LCBR, KC_RCBR, KC_TILD,   KC_ASTR, KC_7, KC_8, KC_9, KC_BSLS,
     MT(MOD_LCTL, KC_CIRC),  KC_DLR,  KC_LPRN, KC_RPRN, KC_PIPE,   KC_PLUS, KC_4, KC_5, KC_6, MT(MOD_RCTL,KC_QUOT),
-    MT(MOD_LSFT, KC_PERC), KC_HASH, KC_LBRC, KC_RBRC, KC_AMPR,   KC_MINS, KC_1, KC_2, KC_3, MT(MOD_RSFT,KC_EQL),
+    MT(MOD_LSFT, KC_F23), KC_HASH, KC_LBRC, KC_RBRC, KC_AMPR,   KC_MINS, KC_1, KC_2, KC_3, MT(MOD_RSFT,KC_EQL),
                                       KC_NO, KC_LGUI, KC_TRNS,   KC_NO,   KC_0, KC_NO
     ),
 /* Keymap 2: Pad/Function layer
