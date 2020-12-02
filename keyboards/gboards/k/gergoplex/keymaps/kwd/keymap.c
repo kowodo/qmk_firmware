@@ -39,33 +39,33 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |SHFT/Z |   X   |   C   |   V   |   B   |  |   N   |   M   |   ,<  |  .>   |SHFT//?;|
  * `-------+-------+-------+-------+-------'  `---------------------------------------'
  *           .---------+---------+---------.  .---------+---------+---------.   
- *           | META/ESC|   META  |SPC(SYM) |  |BSPC(NUM)|   ALT   |   TAB   |
+ *           |         |   META  |SPC(SYM) |  |  (NUM)  |   ALT   |         |
  *           '---------+---------+---------'  '---------+---------+---------' 
  */
 [BASE] = LAYOUT_gergoplex(
-    KC_Q,  			   KC_W, KC_E, KC_R, KC_T,  	KC_Y, KC_U, KC_I,    KC_O, 	 KC_P, 
-    MT(MOD_LCTL, KC_A),KC_S, KC_D, KC_F, KC_G,  	KC_H, KC_J, KC_K,    KC_L, 	 MT(MOD_RCTL, KC_SCLN),
-    MT(MOD_LSFT, KC_Z),KC_X, KC_C, KC_V, KC_B,  	KC_N, KC_M, KC_COMM, KC_DOT, MT(MOD_RSFT, KC_SLSH),
+    KC_Q,  			    KC_W, KC_E, KC_R, KC_T,  	KC_Y, KC_U, KC_I,    KC_O, 	 KC_P, 
+    MT(MOD_LCTL, KC_A), KC_S, KC_D, KC_F, KC_G,  	KC_H, KC_J, KC_K,    KC_L, 	 MT(MOD_RCTL, KC_SCLN),
+    MT(MOD_LSFT, KC_Z), KC_X, KC_C, KC_V, KC_B,  	KC_N, KC_M, KC_COMM, KC_DOT, MT(MOD_RSFT, KC_SLSH),
 
  		KC_NO,      KC_LGUI, LT(SYMB,KC_SPC),	    // Left
-		MO(MOVE)           , KC_LALT, KC_TAB		// Right
+		MO(MOVE)           , KC_LALT, KC_NO 		// Right
     ),
 /* Keymap 1: Symbols layer
  * ,---------------------------------------.  ,---------------------------------------.
  * |   !   |   @   |   {   |   }   |   ~   |  |   *   |   7   |   8   |   9   |   \   |
  * |-------+-------+-------+-------+-------|  |-------+-------+-------+-------+-------|
- * |CTRL/# |   $   |   (   |   )   |   |   |  |   +   |   4   |   5   |   6   | CTRL/'| 
+ * |CTRL/^ |   $   |   (   |   )   |   |   |  |   +   |   4   |   5   |   6   | CTRL/'| 
  * |-------+-------+-------+-------+-------|  |-------+-------+-------+-------+-------|
- * |SHFT/% |   ^   |   [   |   ]   |   &   |  |   -   |   1   |   2   |   3   | SHFT/=|
+ * |SHFT/% |   #   |   [   |   ]   |   &   |  |   -   |   1   |   2   |   3   | SHFT/=|
  * `-------+-------+-------+-------+-------'  `---------------------------------------'
  *           .---------+---------+---------.  .---------+---------+---------.   
  *  	     |         |         | PRESSED |  |         |    0    |         |
- *           '---------+---------+---------'  '---------+---------+---------' 
+ *           '---------+---------+---------'  '---------+---------+---------'
  */
 [SYMB] = LAYOUT_gergoplex(
     KC_EXLM,               KC_AT,   KC_LCBR, KC_RCBR, KC_TILD,   KC_ASTR, KC_7, KC_8, KC_9, KC_BSLS,
-    MT(MOD_LCTL,KC_HASH) , KC_DLR,  KC_LPRN, KC_PIPE, KC_PIPE,   KC_PLUS, KC_4, KC_5, KC_6, MT(MOD_RCTL,KC_QUOT),
-    MT(MOD_LSFT, KC_PERC), KC_CIRC, KC_LBRC, KC_RBRC, KC_AMPR,   KC_MINS, KC_1, KC_2, KC_3, MT(MOD_RSFT,KC_EQL),
+    MT(MOD_LCTL, KC_CIRC),  KC_DLR,  KC_LPRN, KC_RPRN, KC_PIPE,   KC_PLUS, KC_4, KC_5, KC_6, MT(MOD_RCTL,KC_QUOT),
+    MT(MOD_LSFT, KC_PERC), KC_HASH, KC_LBRC, KC_RBRC, KC_AMPR,   KC_MINS, KC_1, KC_2, KC_3, MT(MOD_RSFT,KC_EQL),
                                       KC_NO, KC_LGUI, KC_TRNS,   KC_NO,   KC_0, KC_NO
     ),
 /* Keymap 2: Pad/Function layer
@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |SFT/F11| F12   |       |       |       |  |  MLFT | MDWN  |  MUP  |  MRGT | VOLDN |
  * `-------+-------+-------+-------+-------'  `---------------------------------------'
  *           .---------+---------+---------.  .---------+---------+---------.   
- *  	     |         |         |	       |  | PRESSED |         |         |
+ *  	     |         |         |	       |  | PRESSED |   ALT   |         |
  *           '---------+---------+---------'  '---------+---------+---------' 
  */
 [MOVE] = LAYOUT_gergoplex(
