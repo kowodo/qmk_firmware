@@ -70,19 +70,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,---------------------------------------.  ,---------------------------------------.
  * |   !   |   @   |   {   |   }   |   ~   |  |   *   |   7   |   8   |   9   |   \   |
  * |-------+-------+-------+-------+-------|  |-------+-------+-------+-------+-------|
- * |CTRL/^ |   $   |   (   |   )   |   |   |  |   +   |   4   |   5   |   6   | CTRL/'| 
+ * |CTRL/^ |   $   |   (   |   )   |   |   |  |   +   |   4   |   5   |   6   | CTRL/=| 
  * |-------+-------+-------+-------+-------|  |-------+-------+-------+-------+-------|
- * |SHFT/% |   #   |   [   |   ]   |   &   |  |   -   |   1   |   2   |   3   | SHFT/=|
+ * |SHFT/% |   #   |   [   |   ]   |   &   |  |   -   |   1   |   2   |   3   | SHFT/0|
  * `-------+-------+-------+-------+-------'  `---------------------------------------'
  *           .---------+---------+---------.  .---------+---------+---------.   
- *  	     |         |         | PRESSED |  |         |    0    |         |
+ *  	     |         |         | PRESSED |  |         |         |         |
  *           '---------+---------+---------'  '---------+---------+---------'
  */
 [SYMB] = LAYOUT_gergoplex(
     KC_EXLM,               KC_AT,   KC_LCBR, KC_RCBR, KC_TILD,   KC_ASTR, KC_7, KC_8, KC_9, KC_BSLS,
-    MT(MOD_LCTL, KC_CIRC),  KC_DLR,  KC_LPRN, KC_RPRN, KC_PIPE,   KC_PLUS, KC_4, KC_5, KC_6, MT(MOD_RCTL,KC_QUOT),
-    MT(MOD_LSFT, KC_F23), KC_HASH, KC_LBRC, KC_RBRC, KC_AMPR,   KC_MINS, KC_1, KC_2, KC_3, MT(MOD_RSFT,KC_EQL),
-                                      KC_NO, KC_LGUI, KC_TRNS,   KC_NO,   KC_0, KC_NO
+    MT(MOD_LCTL, KC_CIRC),  KC_DLR,  KC_LPRN, KC_RPRN, KC_PIPE,   KC_PLUS, KC_4, KC_5, KC_6, MT(MOD_RCTL,KC_EQL),
+    MT(MOD_LSFT, KC_F23), KC_HASH, KC_LBRC, KC_RBRC, KC_AMPR,   KC_MINS, KC_1, KC_2, KC_3, MT(MOD_RSFT,KC_0),
+                                      KC_NO, KC_LGUI, KC_TRNS,   KC_NO,   KC_NO, KC_NO
     ),
 /* Keymap 2: Pad/Function layer
  * ,---------------------------------------.  ,---------------------------------------.
