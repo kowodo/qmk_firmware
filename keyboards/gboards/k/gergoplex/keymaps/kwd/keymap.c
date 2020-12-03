@@ -37,7 +37,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
  *
  * ,---------------------------------------.  ,---------------------------------------.
  * |       |      TAB      |       |       |  |       |       |      ESC      BSLH    |
- * |-------+-------+-------+-------+-------|  |-------+-------+-------+-------+-------|
+ * |-------+-------+-BSPC--+--DEL--+-------|  |-------+-------+-------+-------+-------|
  * |       |      BSPC    DEL      |       |  |       |       |      ENT      |       |
  * |-------+-------+-------+-------+-------|  |-------+--GRV--+-QUOTE-+-------+-------|
  * |       |      UNDR    MINS     |       |  |      QUO      |       |       |       |
@@ -77,16 +77,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-------+-------+-------+-------+-------|  |-------+-------+-------+-------+-------|
  * |CTRL/^ |   $   |   (   |   )   |   |   |  |   +   |   4   |   5   |   6   | CTRL/=|
  * |-------+-------+-------+-------+-------|  |-------+-------+-------+-------+-------|
- * |ALT/%  |   #   |   [   |   ]   |   &   |  |   -   |   1   |   2   |   3   | ALT/0 |
+ * | ALT/% |   #   |   [   |   ]   |   &   |  |   -   |   1   |   2   |   3   | ALT/0 |
  * `-------+-------+-------+-------+-------'  `---------------------------------------'
  *           .---------+---------+---------.  .---------+---------+---------.   
  *  	     |         |         | PRESSED |  |         |         |         |
  *           '---------+---------+---------'  '---------+---------+---------'
  */
 [SYMB] = LAYOUT_gergoplex(
-    KC_EXLM,               KC_AT,   KC_LCBR, KC_RCBR, KC_TILD,   KC_ASTR, KC_7, KC_8, KC_9, KC_BSLS,
-    MT(MOD_LCTL, KC_CIRC), KC_DLR,  KC_LPRN, KC_RPRN, KC_PIPE,   KC_PLUS, KC_4, KC_5, KC_6, MT(MOD_RCTL,KC_EQL),
-    LALT_T(KC_F23),        KC_HASH, KC_LBRC, KC_RBRC, KC_AMPR,   KC_MINS, KC_1, KC_2, KC_3, LALT_T(KC_0),
+    KC_AMPR,               KC_PIPE, KC_LCBR, KC_RCBR, KC_TILD,   KC_ASTR, KC_7, KC_8, KC_9, KC_BSLS,
+    MT(MOD_LCTL, KC_CIRC), KC_DLR,  KC_LPRN, KC_RPRN, KC_EXLM,   KC_PLUS, KC_4, KC_5, KC_6, MT(MOD_RCTL,KC_EQL),
+    LALT_T(KC_F23),        KC_HASH, KC_LBRC, KC_RBRC, KC_AT,    KC_MINS, KC_1, KC_2, KC_3, LALT_T(KC_0),
                                       KC_NO, KC_LGUI, KC_TRNS,   KC_NO,   KC_TRNS, KC_NO
     ),
 
@@ -106,6 +106,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_F1,               KC_F2,  KC_F3, KC_F4, KC_F5,		KC_HOME, KC_PGDN, KC_PGUP, KC_END, 	KC_NO,
     MT(MOD_LCTL,KC_F6),  KC_F7,  KC_F8, KC_F9, KC_F10,   	KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_VOLU,
     LALT_T(KC_F11),      KC_F12, KC_NO, KC_NO, KC_NO,  		KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_VOLD,
-            					 KC_NO, KC_NO, KC_NO,    	KC_TRNS, KC_TRNS, KC_NO
+            				   KC_NO, KC_TRNS, KC_NO,    	KC_TRNS, KC_TRNS, KC_NO
     )
 };
