@@ -18,8 +18,7 @@ SUBS(pasta,       "I'd just like to interject for a moment.",       KC_H, KC_J, 
 COMB(sdBspc,     KC_BSPC,         KC_S, KC_D)
 COMB(dfDel,      KC_DEL,          KC_D, KC_F)
 
-COMB(klEnt,      KC_ENT,          KC_K, KC_L)
 
+COMB(jklEnt,     KC_ENT,          KC_J,KC_K, KC_L)
+COMB(uioEsc,     KC_ESC,          KC_U,KC_I, KC_O)
 COMB(weTab,      KC_TAB,          KC_W, KC_E)
-
-COMB(ioEsc,      KC_ESC,          KC_I, KC_O)
