@@ -5,8 +5,12 @@ COMB(xcUnds,      KC_UNDS,          KC_X, KC_C)
 COMB(cvDash,      KC_MINS,          KC_C, KC_V)
 COMB(nmQuot,      KC_QUOT,          KC_N, KC_M)
 
-COMB(kcommaQuote,  KC_QUOT,         KC_K, KC_COMM)
-COMB(jmGrave,      KC_GRV,          KC_J, KC_M)
+// Quote and simillar
+//COMB(jmGrave,      KC_GRV,          KC_J, KC_M)
+COMB(ujGrave,      KC_GRV,          KC_U, KC_J)
+//COMB(kcommaQuote,  KC_QUOT,         KC_K, KC_COMM)
+COMB(olQuote,      KC_QUOT,         KC_O, KC_L)
+
 
 
 //COMB(gbClic,      KC_BTN1,          KC_G, KC_B)
@@ -20,7 +24,13 @@ COMB(edBspc,     KC_BSPC,         KC_E, KC_D)
 COMB(dfDel,      KC_DEL,          KC_D, KC_F)
 COMB(rfDel,      KC_DEL,          KC_R, KC_F)
 
-
-COMB(jklEnt,     KC_ENT,          KC_J,KC_K, KC_L)
-COMB(uioEsc,     KC_ESC,          KC_U,KC_I, KC_O)
+// Enter Escape Tab
+COMB(jklEnt,     KC_ENT,          KC_J, KC_K, KC_L)
+COMB(uioEsc,     KC_ESC,          KC_U, KC_I, KC_O)
+COMB(werEsc,     KC_ESC,          KC_W, KC_E, KC_R)
 COMB(weTab,      KC_TAB,          KC_W, KC_E)
+
+// Volume
+COMB(homeLeftVolumeUp,          KC_VOLU,     KC_HOME, KC_LEFT)
+
+COMB(leftMouseleftVolumeDown,   KC_VOLD,     KC_PGDN, KC_DOWN)
