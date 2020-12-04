@@ -25,12 +25,12 @@ COMB(dfDel,      KC_DEL,          KC_D, KC_F)
 COMB(rfDel,      KC_DEL,          KC_R, KC_F)
 
 // Enter Escape Tab
-COMB(uioEnt,     KC_ENT,          KC_U, KC_I, KC_O)
-COMB(jklEsc,     KC_ESC,          KC_J, KC_K, KC_L)
-COMB(werEsc,     KC_ESC,          KC_W, KC_E, KC_R)
-COMB(weTab,      KC_TAB,          KC_W, KC_E)
+COMB(uioEnt,       KC_ENT,          KC_U, KC_I, KC_O)
+COMB(mCommaDotEnt, KC_ENT,          KC_M, KC_COMM, KC_DOT)
+COMB(jklEsc,       KC_ESC,          KC_J, KC_K, KC_L)
+COMB(werEsc,       KC_ESC,          KC_W, KC_E, KC_R);s
+COMB(weTab,        KC_TAB,          KC_W, KC_E)
 
 // Volume
 COMB(homeLeftVolumeUp,          KC_VOLU,     KC_HOME, KC_LEFT)
-
-COMB(leftMouseleftVolumeDown,   KC_VOLD,     KC_PGDN, KC_DOWN)
+COMB(leftMouseleftVolumeDown,   KC_VOLD,     KC_LEFT, KC_MS_L)
