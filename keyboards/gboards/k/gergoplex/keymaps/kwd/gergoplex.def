@@ -25,8 +25,8 @@ COMB(dfDel,      KC_DEL,          KC_D, KC_F)
 COMB(rfDel,      KC_DEL,          KC_R, KC_F)
 
 // Enter Escape Tab
-COMB(jklEnt,     KC_ENT,          KC_J, KC_K, KC_L)
-COMB(uioEsc,     KC_ESC,          KC_U, KC_I, KC_O)
+COMB(uioEnt,     KC_ENT,          KC_U, KC_I, KC_O)
+COMB(jklEsc,     KC_ESC,          KC_J, KC_K, KC_L)
 COMB(werEsc,     KC_ESC,          KC_W, KC_E, KC_R)
 COMB(weTab,      KC_TAB,          KC_W, KC_E)
 
