@@ -29,7 +29,7 @@ COMB(sefEnt,       KC_ENT,          KC_S, KC_E, KC_F)
 COMB(jilEnt,       KC_ENT,          KC_J, KC_I, KC_L)
 COMB(sdfEsc,       KC_ESC,          KC_S, KC_D, KC_F)
 COMB(jklEsc,       KC_ESC,          KC_J, KC_K, KC_L)
-COMB(weTab,        KC_TAB,          KC_W, KC_E)
+COMB(werTab,        KC_TAB,          KC_W, KC_E, KC_R)
 
 // Volume
 COMB(homeLeftVolumeUp,          KC_VOLU,     KC_HOME, KC_LEFT)
