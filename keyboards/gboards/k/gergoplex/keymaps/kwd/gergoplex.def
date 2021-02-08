@@ -1,14 +1,12 @@
-// Gergoplex specfic combos 
+// Gergoplex specfic combos
 
 COMB(opBacksl,    KC_BSLS,          KC_O, KC_P)
-COMB(xcUnds,      KC_UNDS,          KC_X, KC_C)
-COMB(cvDash,      KC_MINS,          KC_C, KC_V)
+COMB(edUnds,      KC_UNDS,          KC_E, KC_D)
+COMB(rfDash,      KC_MINS,          KC_R, KC_F)
 COMB(nmQuot,      KC_QUOT,          KC_N, KC_M)
 
 // Quote and simillar
-//COMB(jmGrave,      KC_GRV,          KC_J, KC_M)
 COMB(ujGrave,      KC_GRV,          KC_U, KC_J)
-//COMB(kcommaQuote,  KC_QUOT,         KC_K, KC_COMM)
 COMB(olQuote,      KC_QUOT,         KC_O, KC_L)
 
 
@@ -20,13 +18,15 @@ SUBS(pasta,       "I'd just like to interject for a moment.",       KC_H, KC_J, 
 
 // Delete buttons
 COMB(sdBspc,     KC_BSPC,         KC_S, KC_D)
-COMB(edBspc,     KC_BSPC,         KC_E, KC_D)
 COMB(dfDel,      KC_DEL,          KC_D, KC_F)
-COMB(rfDel,      KC_DEL,          KC_R, KC_F)
 
 // Enter Escape Tab
 COMB(sefEnt,       KC_ENT,          KC_S, KC_E, KC_F)
+COMB(sdvEnt,       KC_ENT,          KC_S, KC_D, KC_V)
+COMB(mCommaDotEnt,       KC_ENT,          KC_M, KC_COMM, KC_DOT)
 COMB(jilEnt,       KC_ENT,          KC_J, KC_I, KC_L)
+COMB(mklEnt,       KC_ENT,          KC_M, KC_K, KC_L)
+COMB(xcvEnt,       KC_ENT,          KC_X, KC_C, KC_V)
 COMB(sdfEsc,       KC_ESC,          KC_S, KC_D, KC_F)
 COMB(jklEsc,       KC_ESC,          KC_J, KC_K, KC_L)
 COMB(werTab,        KC_TAB,          KC_W, KC_E, KC_R)
