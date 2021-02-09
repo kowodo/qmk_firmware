@@ -3,7 +3,6 @@
 COMB(opBacksl,    KC_BSLS,          KC_O, KC_P)
 COMB(edUnds,      KC_UNDS,          KC_E, KC_D)
 COMB(rfDash,      KC_MINS,          KC_R, KC_F)
-COMB(nmQuot,      KC_QUOT,          KC_N, KC_M)
 
 // Quote and simillar
 COMB(ujGrave,      KC_GRV,          KC_U, KC_J)
