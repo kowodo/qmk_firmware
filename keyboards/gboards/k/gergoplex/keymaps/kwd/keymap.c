@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |ALT/Z  |   X   |   C   |   V   |   B   |  |   N   |   M   |   ,<  |  .>   |ALT//? |
  * `-------+-------+-------+-------+-------'  `---------------------------------------'
  *           .---------+---------+---------.  .---------+---------+---------.
- *           |         |   META  |SPC(SYM) |  |  (NUM)  |  SHIFT  |         |
+ *           |  SHIFT  |   META  |SPC(SYM) |  |  (NUM)  |  SHIFT  |         |
  *           '---------+---------+---------'  '---------+---------+---------'
  */
 [BASE] = LAYOUT_gergoplex(
@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     MT(MOD_LCTL, KC_A), KC_S, KC_D, KC_F, KC_G,  	KC_H, KC_J, KC_K,    KC_L, 	 MT(MOD_RCTL, KC_SCLN),
     LALT_T(KC_Z),       KC_X, KC_C, KC_V, KC_B,  	KC_N, KC_M, KC_COMM, KC_DOT, LALT_T(KC_SLSH),
 
- 		KC_NO,      KC_LGUI, LT(SYMB,KC_SPC),	    // Left
+ 		KC_LSFT,    KC_LGUI, LT(SYMB,KC_SPC),	    // Left
 		MO(MOVE),   KC_LSFT, KC_NO 		            // Right
     ),
 
@@ -93,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Keymap 2: Pad/Function layer
  * ,---------------------------------------.  ,---------------------------------------.
- * |  F1   |  F2   |  F3   |  F4   |  F5   |  |  HOME | PGDWN |  PGUP |  END  | PGUP  |
+ * |  F1   |  F2   |  F3   |  F4   |  F5   |  |  HOME | PGDWN |  PGUP |  END  | PSCR  |
  * |-------+-------+-------+-------+-------|  |-------+-------+-------+-------+-------|
  * |CTRL/F6|  F7   |  F8   |  F9   |  F10  |  |  LFT  |  DWN  |   UP  |  RGT  |  INS  |
  * |-------+-------+-------+-------+-------|  |-------+-------+-------+-------+-------|
@@ -104,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *           '---------+---------+---------'  '---------+---------+---------'
  */
 [MOVE] = LAYOUT_gergoplex(
-    KC_F1,               KC_F2,  KC_F3, KC_F4, KC_F5,		  KC_HOME, KC_PGDN, KC_PGUP, KC_END, 	KC_PGUP,
+    KC_F1,               KC_F2,  KC_F3, KC_F4, KC_F5,		  KC_HOME, KC_PGDN, KC_PGUP, KC_END, 	KC_PSCREEN,
     MT(MOD_LCTL,KC_F6),  KC_F7,  KC_F8, KC_F9, KC_F10,   	KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, MT(MOD_RCTL,KC_INS),
     LALT_T(KC_F11),      KC_F12, KC_NO, KC_NO, KC_NO,  		KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, LALT_T(KC_PGDN),
             				KC_NO, KC_TRNS, MO(MOUSE),    	KC_TRNS, KC_TRNS, KC_NO
