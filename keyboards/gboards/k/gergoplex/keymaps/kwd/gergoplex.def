@@ -7,6 +7,7 @@ COMB(rfDash,      KC_MINS,          KC_R, KC_F)
 // Quote and simillar
 COMB(ujGrave,      KC_GRV,          KC_U, KC_J)
 COMB(olQuote,      KC_QUOT,         KC_O, KC_L)
+COMB(ikDQuote,     KC_DQT,         KC_I, KC_K)
 
 
 
